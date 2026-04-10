@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Barcha talabalar: </h1>
+
+    <ul>
+        {% for obj in students %}
+            <li>
+                <i>{{obj}} </i> , ID:<b> {{obj.id}} </b>, NAME: {{ obj.name}}, Age: {{ obj.age}}
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
